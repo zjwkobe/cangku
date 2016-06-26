@@ -15,6 +15,7 @@ public class HelloWorld {
         DateFormat dt = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String str=dt.format(date);
         System.out.println(str);
+        System.out.println("nihao!");
 
     }
 }
