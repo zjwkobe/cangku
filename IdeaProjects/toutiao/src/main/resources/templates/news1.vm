@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+hello,where are you?how are you ?
+${value}
+$!{value1}
+${value2}
+#foreach ($color in $list)
+Color $!{foreach.count}: $!{color}
+
+
+#end
+user:  $!{user.getName()}
+$!{user.name}
+#macro(tem $id $cs)
+#foreach($i in $cs)
+<tr><td id=$id>$i</td></tr>
+#end
+#end
+#set($id="0001")
+#set($cs=["ds","dfas","dsa"])
+<table>
+#tem($id $cs)
+</table>
+Include: #include("header.vm")
+
+</pre>
+</body>
+</html>
